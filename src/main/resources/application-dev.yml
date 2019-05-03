@@ -12,7 +12,7 @@ server:
     context-path: /wetech-admin
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: org.postgresql.Driver
     druid:
       initial-size: 1
       max-active: 20
@@ -20,8 +20,8 @@ spring:
       stat-view-servlet:
         allow: true
       test-on-borrow: true
-    password: 123456
-    url: jdbc:mysql://localhost:3306/wetech_admin
-    username: root
+    password: postgres
+    url: jdbc:postgresql://192.168.238.129:5432/postgres
+    username: postgres
   thymeleaf:
     cache: false
